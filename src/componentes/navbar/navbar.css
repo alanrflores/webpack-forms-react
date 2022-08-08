@@ -1,0 +1,18 @@
+
+.navContainer{
+    background-color: rgba(0, 64, 94, 0.888);
+    border-radius: 10px;
+    padding: 8px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.container li{
+    color: bisque;
+    margin: 4px;
+    list-style: none;
+    text-decoration: none;
+}

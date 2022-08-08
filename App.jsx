@@ -1,11 +1,17 @@
 import React from 'react'
-import styles from './app.css'
+import { Route, Routes } from 'react-router-dom'
+import Layout from './src/componentes/layout/Layout.jsx'
+import Contacto from './src/componentes/views/Contacto.jsx'
+import Home from './src/componentes/views/Home.jsx'
 
 const App = () => {
   return (
-    <div className={styles.contenedor}>
-        <h1 className={styles.title}>Hola mundo como va?</h1>
-    </div>
+    <Routes>
+       <Route  path='/' element={<Layout/>}>
+        <Route index element={<Home/>} />
+        <Route path='contacto' element={<Contacto/>} />
+       </Route>
+    </Routes>
   )
 }
 
